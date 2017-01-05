@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/cc/wlp/git/android/todolist/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_action_new.png",
+        "source": "/Users/cc/wlp/git/android/todolist/app/src/main/res/drawable-hdpi/ic_action_new.png"
+    },
+    {
+        "merged": "/Users/cc/wlp/git/android/todolist/app/build/intermediates/res/merged/debug/drawable-hdpi/back.png",
+        "source": "/Users/cc/wlp/git/android/todolist/app/src/main/res/drawable-hdpi/back.png"
+    },
+    {
+        "merged": "/Users/cc/wlp/git/android/todolist/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_launcher.png",
+        "source": "/Users/cc/wlp/git/android/todolist/app/src/main/res/drawable-hdpi/ic_launcher.png"
+    }
+]
