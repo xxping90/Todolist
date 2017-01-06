@@ -2,14 +2,14 @@
 testautoRootPath=/sdcard/Robotium
 junitReportPath=$testautoRootPath/report
 
-cd   todolist
+
 echo “uninstall APK and TestAPK”
 adb uninstall com.example.todolist
 adb uninstall com.example.todolist.tests
 
 echo “install APK and TestAPK”
 adb install app/build/outputs/apk/app-debug.apk
-adb install app/build/outputs/apk/app-debug-androidTest.apk
+adb install app/build/outputs/apk/app-release-unsigned.apk
 
 echo “start to run test”
 
