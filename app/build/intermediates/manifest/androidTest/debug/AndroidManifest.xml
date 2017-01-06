@@ -7,7 +7,7 @@
         android:targetSdkVersion="19" />
 
     <instrumentation
-        android:name="com.example.todolist.runners.Runner"
+        android:name="com.example.todolist.test.runners.Runner"
         android:functionalTest="false"
         android:handleProfiling="false"
         android:label="Tests for com.example.todolist"

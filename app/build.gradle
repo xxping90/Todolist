@@ -27,7 +27,7 @@ android {
         testApplicationId "com.example.todolist.tests"
 //        testApplicationId "com.example.todolist.testcases.tests"
 //        testInstrumentationRunner "android.test.InstrumentationTestRunner"
-        testInstrumentationRunner "com.example.todolist.runners.Runner"
+        testInstrumentationRunner "com.example.todolist.test.runners.Runner"
     }
 
     buildTypes {
