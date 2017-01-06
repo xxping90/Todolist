@@ -8,7 +8,7 @@ adb uninstall com.example.todolist
 adb uninstall com.example.todolist.tests
 
 echo “install APK and TestAPK”
-adb install app/build/outputs/apk/app-debug.apk
+adb install app/build/outputs/apk/app-release-unsigned.apk
 adb install app/build/outputs/apk/app-debug-androidTest.apk
 
 echo “start to run test”
