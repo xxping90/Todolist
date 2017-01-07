@@ -15,7 +15,7 @@ adb install app/build/outputs/apk/app-debug-androidTest.apk
 
 echo “start to run test”
 
-adb shell am instrument -w -e reportDir $junitReportPath  -e reportFile test-report.xml com.example.todolist.tests/com.example.todolist.runners.Runner
+adb shell am instrument -w -e reportDir $junitReportPath  -e reportFile test-report.xml com.example.todolist.tests/com.example.todolist.test.runners.Runner
 
 echo  “pull junit report”
 
