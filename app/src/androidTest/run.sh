@@ -3,7 +3,7 @@ testautoRootPath=/sdcard/Robotium
 junitReportPath=$testautoRootPath/report
 
 echo "delete all screenshots in sdcard"
-adb shell rm -rf /sdcard/Robotium-Screenshots/
+adb shell rm -rf /sdcard/Robotium-Screenshots/*
 
 echo “uninstall APK and TestAPK”
 adb uninstall com.example.todolist
