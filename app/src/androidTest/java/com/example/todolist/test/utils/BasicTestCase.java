@@ -1,10 +1,15 @@
 package com.example.todolist.test.utils;
 
+import android.os.Environment;
 import android.os.PowerManager;
 import android.test.ActivityInstrumentationTestCase2;
 
 import com.example.todolist.LoginActivity;
 import com.robotium.solo.Solo;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 
 /**
  * Created by cc on 2016/12/31.
@@ -91,6 +96,7 @@ public class BasicTestCase extends ActivityInstrumentationTestCase2 {
 
 
     private void init(){
+        logCurrentTestCase();
         solo = new Solo(getInstrumentation(),getActivity());
         //实例化uihelper
         uiHelper = new UIHelper(solo);
@@ -102,6 +108,34 @@ public class BasicTestCase extends ActivityInstrumentationTestCase2 {
         Util.unlock(getInstrumentation());
         //连接网络
         NetworkUtil.setAirplaneModeOffAndNetworkOn(getInstrumentation().getTargetContext());
+    }
+
+    /**
+     * 将当前的case名称写入/sdcard/Robotium目录下的crash.txt文件中
+     * 第二次调用会把前面的会把前面的case名称覆盖
+     */
+    private  void logCurrentTestCase(){
+        FileWriter crashFile = null;
+        try{
+            File path = Environment.getExternalStorageDirectory();
+            File logPath = new File(path + "/" + "Robotium");
+            if(!logPath.exists()){
+                logPath.mkdir();
+            }
+            crashFile = new FileWriter(logPath + "/" + "crash.txt");
+            crashFile.write(this.getClass().getSimpleName());
+            crashFile.flush();
+        }catch (IOException e){
+            e.printStackTrace();
+        }finally {
+            if (crashFile != null){
+                try {
+                    crashFile.close();
+                }catch (IOException e){
+                    e.printStackTrace();
+                }
+            }
+        }
     }
 
 }

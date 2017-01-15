@@ -1,7 +1,6 @@
 package com.example.todolist.test.runners;
 
-import android.test.InstrumentationTestRunner;
-
+import com.example.todolist.test.testcases.LatestTest;
 import com.example.todolist.test.testsuites.LoginSuite;
 import com.example.todolist.test.testsuites.ToDoListSuite;
 
@@ -18,6 +17,10 @@ public class Runner extends CommonRunner {
 
         suite.addTest(LoginSuite.getTestSuite());
         suite.addTest(ToDoListSuite.getTestSuite());
+        suite.addTestSuite(LatestTest.class);
+        if (isNeedRegenerate){
+            suite = reGenerateTestSuiteWhenCrash(getCaseNameList(suite));
+        }
         return suite;
     }
 }

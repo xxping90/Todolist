@@ -23,6 +23,6 @@ public class Login extends BasicTestCase {
 
         //第一个参数是在验证失败的情况下，要显示的提示字符串
         //第二个参数是要用来断言的表达式
-        assertFalse("错误提示信息没有出现，可能出现bug。",uiHelper.getSolo().searchText("用户名或者密码错误！",true));
+        assertTrue("错误提示信息没有出现，可能出现bug。",uiHelper.getSolo().searchText("用户名或者密码错误！",true));
     }
 }

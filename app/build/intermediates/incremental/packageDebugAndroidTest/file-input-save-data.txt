@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sat Jan 07 12:27:25 CST 2017
+#Sun Jan 15 23:21:48 CST 2017
 25.file=/Users/cc/wlp/git/android/todolist/app/build/intermediates/transforms/mergeJavaRes/androidTest/debug/jars/2/1f/main.jar/com/robotium/solo/By.html
 41.base=/Users/cc/wlp/git/android/todolist/app/build/intermediates/transforms/mergeJavaRes/androidTest/debug/jars/2/1f/main.jar
 25.base=/Users/cc/wlp/git/android/todolist/app/build/intermediates/transforms/mergeJavaRes/androidTest/debug/jars/2/1f/main.jar
@@ -16,7 +16,7 @@
 14.base=/Users/cc/wlp/git/android/todolist/app/build/intermediates/transforms/mergeJavaRes/androidTest/debug/jars/2/1f/main.jar
 16.set=JAVA_RESOURCE
 count=44
-6.file=/Users/cc/wlp/git/android/todolist/app/build/intermediates/transforms/mergeJavaRes/androidTest/debug/jars/2/1f/main.jar/com/robotium/solo/class-use/SystemUtils.html
+6.file=/Users/cc/wlp/git/android/todolist/app/build/intermediates/transforms/mergeJavaRes/androidTest/debug/jars/2/1f/main.jar/com/robotium/solo/SystemUtils.html
 6.base=/Users/cc/wlp/git/android/todolist/app/build/intermediates/transforms/mergeJavaRes/androidTest/debug/jars/2/1f/main.jar
 43.set=ANDROID_RESOURCE
 42.file=/Users/cc/wlp/git/android/todolist/app/build/intermediates/transforms/mergeJavaRes/androidTest/debug/jars/2/1f/main.jar/deprecated-list.html
@@ -78,7 +78,7 @@ count=44
 2.base=/Users/cc/wlp/git/android/todolist/app/build/intermediates/transforms/mergeJavaRes/androidTest/debug/jars/2/1f/main.jar
 39.base=/Users/cc/wlp/git/android/todolist/app/build/intermediates/transforms/mergeJavaRes/androidTest/debug/jars/2/1f/main.jar
 41.set=JAVA_RESOURCE
-22.file=/Users/cc/wlp/git/android/todolist/app/build/intermediates/transforms/mergeJavaRes/androidTest/debug/jars/2/1f/main.jar/com/robotium/solo/class-use/Illustration.html
+22.file=/Users/cc/wlp/git/android/todolist/app/build/intermediates/transforms/mergeJavaRes/androidTest/debug/jars/2/1f/main.jar/resources/inherit.gif
 22.base=/Users/cc/wlp/git/android/todolist/app/build/intermediates/transforms/mergeJavaRes/androidTest/debug/jars/2/1f/main.jar
 0.set=JAVA_RESOURCE
 19.set=JAVA_RESOURCE
@@ -116,7 +116,7 @@ count=44
 4.base=/Users/cc/wlp/git/android/todolist/app/build/intermediates/transforms/mergeJavaRes/androidTest/debug/jars/2/1f/main.jar
 23.set=JAVA_RESOURCE
 40.file=/Users/cc/wlp/git/android/todolist/app/build/intermediates/transforms/mergeJavaRes/androidTest/debug/jars/2/1f/main.jar/LICENSE-junit.txt
-24.file=/Users/cc/wlp/git/android/todolist/app/build/intermediates/transforms/mergeJavaRes/androidTest/debug/jars/2/1f/main.jar/resources/inherit.gif
+24.file=/Users/cc/wlp/git/android/todolist/app/build/intermediates/transforms/mergeJavaRes/androidTest/debug/jars/2/1f/main.jar/com/robotium/solo/class-use/Illustration.html
 9.set=JAVA_RESOURCE
 40.base=/Users/cc/wlp/git/android/todolist/app/build/intermediates/transforms/mergeJavaRes/androidTest/debug/jars/2/1f/main.jar
 39.set=JAVA_RESOURCE
@@ -128,7 +128,7 @@ count=44
 17.set=JAVA_RESOURCE
 13.file=/Users/cc/wlp/git/android/todolist/app/build/intermediates/transforms/mergeJavaRes/androidTest/debug/jars/2/1f/main.jar/com/robotium/solo/class-use/WebElement.html
 13.base=/Users/cc/wlp/git/android/todolist/app/build/intermediates/transforms/mergeJavaRes/androidTest/debug/jars/2/1f/main.jar
-5.file=/Users/cc/wlp/git/android/todolist/app/build/intermediates/transforms/mergeJavaRes/androidTest/debug/jars/2/1f/main.jar/com/robotium/solo/SystemUtils.html
+5.file=/Users/cc/wlp/git/android/todolist/app/build/intermediates/transforms/mergeJavaRes/androidTest/debug/jars/2/1f/main.jar/com/robotium/solo/class-use/SystemUtils.html
 3.set=JAVA_RESOURCE
 5.base=/Users/cc/wlp/git/android/todolist/app/build/intermediates/transforms/mergeJavaRes/androidTest/debug/jars/2/1f/main.jar
 33.set=JAVA_RESOURCE
