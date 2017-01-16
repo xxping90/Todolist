@@ -66,4 +66,6 @@ echo "pull Screenshots"
 adb -s $1 pull /sdcard/Robotium-Screenshots/  $WORKSPACE/
 
 echo "merge xml files"
-java -jar todolist/merger.jar
+#java -jar todolist/merger.jar
+
+java -jar app/src/androidTest/merger.jar
