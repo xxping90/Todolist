@@ -97,7 +97,7 @@ public class CommonRunner extends JUnitReportTestRunner {
         for (String name : caseNameList){
             if (name.contains(crashCaseName)){
                 startAddCaseFlag = true;
-                Log.e("崩溃存在", crashCaseName);
+                Log.e("崩溃存在重组", crashCaseName);
                 continue;
             }
             if (startAddCaseFlag){

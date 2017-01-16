@@ -48,10 +48,13 @@ public class BasicTestCase extends ActivityInstrumentationTestCase2 {
     protected void runTest() throws Throwable {
         try{
             super.runTest();
-        }catch (junit.framework.AssertionFailedError afe){
+        }catch (junit.framework.AssertionFailedError afe) {
             solo.takeScreenshot(this.getClass().getSimpleName());
-            throw  afe;
-        }catch (Throwable e){
+            throw afe;
+        } catch (ArithmeticException are){
+            solo.takeScreenshot(this.getClass().getSimpleName());
+            throw  are;
+        } catch (Throwable e){
             solo.takeScreenshot(this.getClass().getSimpleName());
             throw new RunTestException(e);
         }
