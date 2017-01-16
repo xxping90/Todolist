@@ -5,22 +5,22 @@ junitReportPath=$testautoRootPath/report
 
 #删除sdcard 上错误截图、junit报告、记录crash的文件，避免对本次运行的干扰
 echo "delete all screenshots in sdcard"
-adb -s $1 shell rm -rf /sdcard/Robotium-Screenshots/*
+adb  shell rm -rf /sdcard/Robotium-Screenshots/*
 
 #下面启动自动化测试用例时必须指定reportDir 为$junitReportPath
-adb -s $1 shell rm -rf $junitReportPath/*
+adb  shell rm -rf $junitReportPath/*
 
 #在源码实现的crash.txt路径必须指定为/sdcard/Robotium/crash.txt
-adb -s $1 shell rm -rf $testautoRootPath/crash.txt
+adb  shell rm -rf $testautoRootPath/crash.txt
 
 #安装源码和测试APK
 echo "uninstall APK and TestAPK"
-adb -s $1 uninstall com.example.todolist
-adb -s $1 uninstall com.example.todolist.tests
+adb  uninstall com.example.todolist
+adb  uninstall com.example.todolist.tests
 
 echo "install APK and TestAPK"
-adb -s $1 install app/build/outputs/apk/app-debug.apk
-adb -s $1 install app/build/outputs/apk/app-debug-androidTest.apk
+adb  install app/build/outputs/apk/app-debug.apk
+adb  install app/build/outputs/apk/app-debug-androidTest.apk
 
 #开始运行自动化测试用例
 #在这里加入crash处理机制
@@ -38,13 +38,13 @@ do
 #指定junit产生的路径为$junitReportPath ,并指定报告的名称为"junit-report_"+crashCount+".xml"
 #通过-e 添加一个键为regenerateTestsuite,值为$regenerateTestsuite  ,标识是否重新组织测试用例集合
 #第一次regenerateTestsuite的值为false，如果crash发生了，就需要把这个值赋值为true，下次循环时这个值就是true了。需要组织测试用例
-    adb -s $1 shell am instrument -w -e reportDir $junitReportPath  -e reportFile junit-report_${crashCount}.xml  -e regenerateTestsuite $regenerateTestsuite com.example.todolist.tests/com.example.todolist.test.runners.Runner
+    adb  shell am instrument -w -e reportDir $junitReportPath  -e reportFile junit-report_${crashCount}.xml  -e regenerateTestsuite $regenerateTestsuite com.example.todolist.tests/com.example.todolist.test.runners.Runner
 #执行完一次之后。先把junit包报告pull到jenkins workspace之下
 #同时把crash.txt文件pull到workplace之下
     echo  "pull junit report"
 
-    adb -s $1 pull $junitReportPath/junit-report_${crashCount}.xml  $WORKSPACE/junit-report_${crashCount}.xml
-    adb -s $1 pull $testautoRootPath/crash.txt    $WORKSPACE
+    adb  pull $junitReportPath/junit-report_${crashCount}.xml  $WORKSPACE/junit-report_${crashCount}.xml
+    adb  pull $testautoRootPath/crash.txt    $WORKSPACE
 #现在判断workspace地下是否有没有crash.txt文件
 #有的话，说明发生了crash，需要把regenerateTestsuite的值赋值为true，重新组织用例，排除已经运行的用例
 #并把crashCount的值加1，代表发生的crash数
@@ -63,4 +63,4 @@ do
 done
 
 echo "pull Screenshots"
-adb -s $1 pull /sdcard/Robotium-Screenshots/  $WORKSPACE/
+adb  pull /sdcard/Robotium-Screenshots/  $WORKSPACE/
