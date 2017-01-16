@@ -16,7 +16,7 @@ public class LatestTest extends BasicTestCase {
         super.setUp();
         File file = new File("/sdcard/Robotium/crash.txt");
         if (file.exists())
-            //file.delete();
+            file.delete();
             Log.i("last test", "setUp: 崩溃存在");
     }
 
