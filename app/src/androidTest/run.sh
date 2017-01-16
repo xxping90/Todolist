@@ -53,8 +53,8 @@ do
 #如果进入else则没有crash发生，把loop值设置为false，终止循环体执行
     if [ -f $WORKSPACE/crash.txt ];then
         echo "crash happen"
-        /usr/bin/cat $WORKSAPCE\\crash.txt >> totalCrash.txt
-        /usr/bin/rm -f $WORKSPCACE/crash.txt
+        /bin/cat $WORKSAPCE\\crash.txt >> totalCrash.txt
+        /bin/rm -f $WORKSPCACE/crash.txt
         regenerateTestsuite=true
         ((crashCount=$crashCount+1))
     else
