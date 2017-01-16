@@ -1850,6 +1850,7 @@ containing a value of this type.
         public static final int action_bar_title=0x7f0a0024;
         public static final int action_container=0x7f0a0062;
         public static final int action_context_bar=0x7f0a0048;
+        public static final int action_crash=0x7f0a007c;
         public static final int action_divider=0x7f0a0069;
         public static final int action_image=0x7f0a0063;
         public static final int action_logout=0x7f0a007b;

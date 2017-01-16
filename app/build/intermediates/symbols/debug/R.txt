@@ -532,6 +532,7 @@ int id action_bar_subtitle 0x7f0a0025
 int id action_bar_title 0x7f0a0024
 int id action_container 0x7f0a0062
 int id action_context_bar 0x7f0a0048
+int id action_crash 0x7f0a007c
 int id action_divider 0x7f0a0069
 int id action_image 0x7f0a0063
 int id action_logout 0x7f0a007b

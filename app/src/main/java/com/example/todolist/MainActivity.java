@@ -118,6 +118,9 @@ public class MainActivity extends Activity {
 			});
 			builder.create().show();
 		}
+		if (id == R.id.action_crash){
+			int test=2/0;
+		}
 		return super.onOptionsItemSelected(item);
 	}
 
