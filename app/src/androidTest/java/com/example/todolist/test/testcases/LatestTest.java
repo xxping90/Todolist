@@ -1,5 +1,7 @@
 package com.example.todolist.test.testcases;
 
+import android.util.Log;
+
 import com.example.todolist.test.utils.BasicTestCase;
 
 import java.io.File;
@@ -14,7 +16,8 @@ public class LatestTest extends BasicTestCase {
         super.setUp();
         File file = new File("/sdcard/Robotium/crash.txt");
         if (file.exists())
-            file.delete();
+            //file.delete();
+            Log.i("last test", "setUp: 崩溃存在");
     }
 
     public void testNothing(){
