@@ -63,7 +63,7 @@ public class CommonRunner extends JUnitReportTestRunner {
                 e.printStackTrace();
             }
         }
-        Log.i("获取崩溃名", caseName);
+        Log.e("获取崩溃名", caseName);
         return caseName;
     }
 
@@ -97,7 +97,7 @@ public class CommonRunner extends JUnitReportTestRunner {
         for (String name : caseNameList){
             if (name.contains(crashCaseName)){
                 startAddCaseFlag = true;
-                Log.i("崩溃存在", crashCaseName);
+                Log.e("崩溃存在", crashCaseName);
                 continue;
             }
             if (startAddCaseFlag){

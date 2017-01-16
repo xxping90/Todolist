@@ -17,10 +17,11 @@ public class Runner extends CommonRunner {
 
         suite.addTest(LoginSuite.getTestSuite());
         suite.addTest(ToDoListSuite.getTestSuite());
-        suite.addTestSuite(LatestTest.class);
+
         if (isNeedRegenerate){
             suite = reGenerateTestSuiteWhenCrash(getCaseNameList(suite));
         }
+        suite.addTestSuite(LatestTest.class);
         return suite;
     }
 }
