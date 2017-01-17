@@ -17,8 +17,8 @@ public class LoginSuite {
 
         suite.addTestSuite(Login.class);
         suite.addTestSuite(CrashTest_2.class);
-        suite.addTestSuite(CrashTest.class);
         suite.addTestSuite(Login_2.class);
+        suite.addTestSuite(CrashTest.class);
 
         return  suite;
 
