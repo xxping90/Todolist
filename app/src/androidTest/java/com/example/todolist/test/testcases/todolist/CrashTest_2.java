@@ -12,7 +12,7 @@ public class CrashTest_2 extends BasicTestCaseWithLogin {
     protected void setUp() throws Exception {
         super.setUp();
     }
-    public  void testCrash(){
+    public  void testCrash_2(){
         uiHelper.getSolo().sendKey(Solo.MENU);
         uiHelper.getSolo().clickOnText("点击崩溃");
 
