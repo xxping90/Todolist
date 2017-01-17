@@ -1,6 +1,7 @@
 package com.example.todolist.test.testsuites;
 
 import com.example.todolist.test.testcases.login.CrashTest;
+import com.example.todolist.test.testcases.login.CrashTest_2;
 import com.example.todolist.test.testcases.login.Login;
 import com.example.todolist.test.testcases.login.Login_2;
 
@@ -17,6 +18,7 @@ public class LoginSuite {
         suite.addTestSuite(Login.class);
         suite.addTestSuite(CrashTest.class);
         suite.addTestSuite(Login_2.class);
+        suite.addTestSuite(CrashTest_2.class);
         return  suite;
 
     }
