@@ -22,7 +22,8 @@ public class Login_2 extends BasicTestCaseWithLogin {
         //android.os.Process.killProcess(android.os.Process.myPid());
 
         //验证待办的按钮是否存在，如果不存在，就给出错误提示"新建的待办事项不存在！"
-        //assertTrue("新建待办事项的按钮不存在！",uiHelper.getElementsMainActivity().getActionNewView().isShown());
+
         assertTrue(uiHelper.getSolo().waitForActivity(MainActivity.class,3000));
+        assertTrue("新建待办事项的按钮不存在！",uiHelper.getElementsMainActivity().getActionNewView().isShown());
     }
 }
