@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Jan 17 15:29:07 CST 2017
+#Tue Jan 17 15:46:56 CST 2017
 210.set=ANDROID_RESOURCE
 14.set=ANDROID_RESOURCE
 180.file=/Users/cc/wlp/git/android/todolist/app/build/intermediates/res/resources-debug.ap_/res/drawable-ldrtl-xxhdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png

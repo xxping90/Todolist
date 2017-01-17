@@ -14,7 +14,7 @@ public class CrashTest_2 extends BasicTestCaseWithLogin {
     }
     public  void testCrash_2(){
         uiHelper.getSolo().sendKey(Solo.MENU);
-        uiHelper.getSolo().clickOnText("点击崩溃");
+        uiHelper.getSolo().clickOnText("点击崩溃1");
 
         assertTrue("新建待办事项的按钮不存在！",uiHelper.getElementsMainActivity().getActionNewView().isShown());
     }

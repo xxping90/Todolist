@@ -121,6 +121,9 @@ public class MainActivity extends Activity {
 		if (id == R.id.action_crash){
 			int test=2/0;
 		}
+		if (id == R.id.action_crash_two){
+			android.os.Process.killProcess(android.os.Process.myPid());
+		}
 		return super.onOptionsItemSelected(item);
 	}
 
